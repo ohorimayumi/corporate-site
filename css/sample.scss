@@ -343,6 +343,7 @@ header{
 
 // newspage
 
+
  #sub_cover{
  height:120px;
 
@@ -358,6 +359,7 @@ header{
     background-image: url("../images/news/sub_cover@2x.jpg");
 }
   
+ 
   h2{
     color: white;
     font:Helvetica;
@@ -384,9 +386,10 @@ header{
       font-size:3.2rem;
       padding:90px;
       }
-}} 
+}}
   // min-width: 550px
    
+
 
 .news_li{
   margin:20px 0;
@@ -402,36 +405,41 @@ header{
   }}
   
    @media (min-width: 550px) {
+
+
+
 .news_li{
   
   span{
    display:inline-block;
    padding-right:10px;
-  }}}
-
+  }}
+}
 
 
 
 
 // company page
 
-
-#contents{
+  #contents{
+  padding-top:20px;
+  padding-bottom:70px;
+  
   #main{
- padding-top:20px;
-
+    padding-right:20px;
+  
   h2{
     color: $blue1;
     font-size:1.5rem;
-    font-weight:400;
+    font-weight:bold;
     line-height:1.6;
     border-bottom:3px solid $blue1;
+    border-top:0;
     padding-bottom:15px;
     margin-bottom:0;
-    
-  }
- 
- .u-full-width {
+     
+   }
+   .u-full-width {
    border-collapse:collapse;
    border-spacing:0;
  
@@ -446,15 +454,26 @@ header{
      padding-right:20px;
    }
  }
+}}
 
-  @media (min-width: 550px) {
-    padding-top: 30px;
-    
-    h2{
+
+
+  @media (min-width: 550px) 
+  {
+   #contents{
+  padding-top:35px;
+
+ h2{
       font-size:2rem;
-    }}}}
-  //main
+    }
+    
+      
+    }}
+  //#main
   
+   
+   
+ 
   
 #sidebar{
   .pc_sidemenu{
@@ -501,7 +520,6 @@ header{
    
 
 footer{
-
   background-color:$blue1;
   background-size:cover;
   color: #fff;
